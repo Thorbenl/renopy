@@ -1,0 +1,25 @@
+-r requirements-common.in
+
+psycopg2-binary  # In dev, use the package with binary wheels, so it's easier to install
+selenium
+nplusone
+mockredispy
+requests_mock
+django-debug-toolbar
+freezegun==1.1.0
+tblib
+vcrpy==4.1.1
+pip-tools
+mypy==0.931
+django-stubs==1.9.0
+types-python-dateutil
+types-requests
+ipython
+polib==1.1.1
+types-polib
+types-redis
+types-freezegun
+types-protobuf
+unittest-xml-reporting
+faker
+boto3-stubs==1.20.34

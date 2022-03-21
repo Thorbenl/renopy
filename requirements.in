@@ -1,0 +1,2 @@
+-r requirements-common.in
+psycopg2  # In production, use the package which uses system libraries
