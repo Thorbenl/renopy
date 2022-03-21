@@ -1,0 +1,28 @@
+{
+  "schedule": [
+    "after 10pm every weekday",
+    "before 5am every weekday",
+    "every weekend"
+  ],
+  "separateMajorMinor": false,
+  "packageRules": [
+    {
+      "description": "Disable pip_requirements to not interfere with pip-compile manager.",
+      "matchManagers": [
+        "pip_requirements"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Add fileMatch to pip-compile, as it's empty by default.",
+      "groupName": "backendDependencies",
+      "groupSlug": "all-backend-deps",
+      "matchManagers": [
+        "pip-compile"
+      ],
+      "fileMatch": [
+        "(^|/)requirements\\.in$"
+      ]
+    }
+  ]
+}
