@@ -1,8 +1,10 @@
 # renopy
 Potential bug on Renovatebot?
 
-Please install piptool with `pip install pip-tools`
-and then run `scripts/update-reqs.sh` to update the dependencies
+Make a virtual env with `python3 -m venv venv`, then activate it with `source venv/bin/activate`.
+Please install pip-tools with `pip3.9 install pip-tools`
+and then run `scripts/update-reqs.sh` to get the `.txt` files for the dependencies.
+Install these with `pip3.9 install -r requirements-dev.txt`
 
 # Expected Behavior:
 
