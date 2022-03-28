@@ -4,6 +4,16 @@
     "before 5am every weekday",
     "every weekend"
   ],
+  "pip_requirements": {
+    "enabled": false
+  },
+  "pip-compile": {
+    "fileMatch": [
+      "requirements-common.in",
+      "requirements-dev.in",
+      "requirements.in"
+    ]
+  },
   "separateMajorMinor": false,
   "packageRules": [
     {
@@ -19,10 +29,49 @@
       "groupSlug": "all-backend-deps",
       "matchManagers": [
         "pip-compile"
-      ],
-      "fileMatch": [
-        "(^|/)requirements\\.in$"
       ]
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "groupName": "frontendDevDependencies",
+      "groupSlug": "all-fr-devdeps",
+      "semanticCommitType": "chore"
+    },
+    {
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "groupName": "frontendDependencies",
+      "groupSlug": "all-fr-deps",
+      "semanticCommitType": "fix"
     }
   ]
 }
