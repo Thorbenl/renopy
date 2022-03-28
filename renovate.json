@@ -1,9 +1,4 @@
 {
-  "schedule": [
-    "after 10pm every weekday",
-    "before 5am every weekday",
-    "every weekend"
-  ],
   "pip_requirements": {
     "enabled": false
   },
