@@ -1,4 +1,5 @@
 {
+  "masterIssue": true,
   "pip_requirements": {
     "enabled": false
   },
