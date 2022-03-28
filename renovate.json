@@ -1,4 +1,7 @@
 {
+  "schedule": [
+    "before 1pm"
+  ],
   "pip_requirements": {
     "enabled": false
   },
